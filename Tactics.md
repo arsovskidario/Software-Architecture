@@ -38,10 +38,8 @@ kl
 Methods for reduce coupling :
 -	Encapsulatation 
 		
-
+![java_loose_coupling]([https://raw.githubusercontent.com/arsovskidario/Software-Architecture/master/images/java_Loose_Coupling_Example.jpeg?token=AHAENOWHXD6ZN62ISNYJBY26ZYN3M](https://raw.githubusercontent.com/arsovskidario/Software-Architecture/master/images/java_Loose_Coupling_Example.jpeg?token=AHAENOWHXD6ZN62ISNYJBY26ZYN3M))
 	
-![java_loose_coupling.img]()
-
 **cohesion** - do one thing and do it well approach
 
 High cohesion means to keep similar and related things together, to couple or fuse parts which share content, functionality, reason or goal. In other words, low cohesion could for example mean a function/class/code entity which serves multiple purposes rather than being "to the point". One of the carrying ideas is to do one thing and do it well. Others could include the obvious fact that you don't replicate similar functionality in many places. This also improves locality of the code base, certain kinds of things are found at a certain place(file, class, set of functions, ...) rather than being scattered around.
