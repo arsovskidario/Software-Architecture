@@ -99,21 +99,21 @@ This tactic is mainly applied to the processor.
 deliver a message is highly variable.
 
 ### Resist attacks
--Identify actors = identify IP of attacker
--Authenticate actors = authenticate users of the system
--Authorize actors = Authorization means ensuring that an authenticated actor
+- Identify actors = identify IP of attacker
+- Authenticate actors = authenticate users of the system
+- Authorize actors = Authorization means ensuring that an authenticated actor
 has the rights to access and modify either data or services.
--Limit access = Limiting access involves controlling what and who may access
+- Limit access = Limiting access involves controlling what and who may access
 which parts of a system.
--Limit exposure = basically hide entry points of the system in order to make them secure, conceal critical resources or divide system into multiple components in order to create a better secure system.
--Encrypt data
--Separate entities = separate sensitive and non sensitive data
--Change default settings 
+- Limit exposure = basically hide entry points of the system in order to make them secure, conceal critical resources or divide system into multiple components in order to create a better secure system.
+- Encrypt data
+- Separate entities = separate sensitive and non sensitive data
+- Change default settings 
 
 ### React to Attacks
--Revoke access  = limit access to sensitive resources 
--Lock computer  = if multiple attempts to login to system fail lock the computer and don't allow access
--Inform actors =inform operators that work with the system about an attack
+- Revoke access  = limit access to sensitive resources 
+- Lock computer  = if multiple attempts to login to system fail lock the computer and don't allow access
+- Inform actors =inform operators that work with the system about an attack
 
 ### Recover from attacks
 Using tactics from Availability to recover from Faults/Attacks.
@@ -121,7 +121,7 @@ Using tactics from Availability to recover from Faults/Attacks.
 # Tactics for Testability 
 Ensure that testing the system is easy and cost effective.
 Code reviews are used for testing before deployment.
-Recording the system fault after occurring is useful for later use in testing the system to see if it it will fail again given the same inputs.
+Recording the system fault after occurring is useful for later use in testing the system to see if it will fail again given the same inputs.
 Creating a devoted interface that helps test our system by giving it input.
 Sandboxing the system for testing sake.
 
