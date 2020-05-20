@@ -2,15 +2,15 @@
 # Tactis for availability:
  main focus is the availability of the service that is provided by our system, therefore 
 	tactis for availability focus on finding the fault , recovering from it and preventing it from
-	occuring again 
+	occurring again 
 
 ## Fault detecting 
-- before we can repair a system we first need to find the fault that is cousing harm to our system
-- Detecting faults can be done by *monitoring* which is a component with a soul purpose of monitoring the states of other system components and detecting irregolarities based on system specifications.
+- before we can repair a system we first need to find the fault that is causing harm to our system
+- Detecting faults can be done by *monitoring* which is a component with a soul purpose of monitoring the states of other system components and detecting irregularities based on system specifications.
 kl		
 - **Ping/echo** is a tactic in which a monitoring component pings(signals) another component from the system and waits for a response in some time interval. If the elements doesn't reply in time then it is considered broke (timed out). Ping/echo is used in nodes connected by an IP. 
 
-- **Heartbeat**, the component sets signals to the monitor in some interval of time, if the signal is received then the component is persumed as alive and working.
+- **Heartbeat**, the component sets signals to the monitor in some interval of time, if the signal is received then the component is presumed as alive and working.
 
 - **Voting**  a system where three components are given the same input and are expected to return the same output. If the output is not the same there is a fault. Implementing the system can be done by replicating the components so they have the same logic and always have to return the same output. If the output is different in one component that it's not working properly. Problems in this implementation can be the fact that the logic can be implemented in a bad way for all the components. Diversity in the production of the components ensures different implementation logic and less failure.
 
@@ -87,3 +87,50 @@ This tactic is mainly applied to the processor.
 - Introduce concurrency = use different threads to process different streams in order to achieve parallel processing
 - Bound queue sizes = if you create a cap on the queue that processes events than you can limit the computational power of your system
 - Schedule resources = if multiple components are trying to use the same resource you can schedule the use of it so everyone gets a share just not in the same time.
+
+
+# Security
+
+### Detect Attacks 
+ - Detect intrusion  through network traffic based on known patterns of malicious behavior
+-  Detect service denial = use pattern to distinguish known profiles that had done denial-of -service attacks
+- Verify message integrity = 
+-  Detect message delay (Detect a middle person in communication)= detect suspicious timing behavior, where the time it takes to
+deliver a message is highly variable.
+
+### Resist attacks
+-Identify actors = identify IP of attacker
+-Authenticate actors = authenticate users of the system
+-Authorize actors = Authorization means ensuring that an authenticated actor
+has the rights to access and modify either data or services.
+-Limit access = Limiting access involves controlling what and who may access
+which parts of a system.
+-Limit exposure = basically hide entry points of the system in order to make them secure, conceal critical resources or divide system into multiple components in order to create a better secure system.
+-Encrypt data
+-Separate entities = separate sensitive and non sensitive data
+-Change default settings 
+
+### React to Attacks
+-Revoke access  = limit access to sensitive resources 
+-Lock computer  = if multiple attempts to login to system fail lock the computer and don't allow access
+-Inform actors =inform operators that work with the system about an attack
+
+### Recover from attacks
+Using tactics from Availability to recover from Faults/Attacks.
+
+# Tactics for Testability 
+Ensure that testing the system is easy and cost effective.
+Code reviews are used for testing before deployment.
+Recording the system fault after occurring is useful for later use in testing the system to see if it it will fail again given the same inputs.
+Creating a devoted interface that helps test our system by giving it input.
+Sandboxing the system for testing sake.
+
+# Tactics for Usability 
+
+Architectural support for usability involves both allowing the user to take the ini-
+tiative—in circumstances such as canceling a long-running command or undoing
+a completed command—and aggregating data and commands.
+
+Use MVC pattern in order to allow your interface to be easily changed to fit the needs of the end user.
+Provide feedback to end user via messages or buttons to ensure him of the action he is trying to accomplish.
+Provide assistance to the end user when he's trying to accomplish a complex task that he doesn't know how.
