@@ -133,7 +133,7 @@ a completed command—and aggregating data and commands.
 
 Use MVC pattern in order to allow your interface to be easily changed to fit the needs of the end user.
 Provide feedback to end user via messages or buttons to ensure him of the action he is trying to accomplish.
-Provide assistance to the end user when he's trying to accomplish a complex task that he doesn't know how.
+Provide assistance to the end user when he's trying to accomplish a complex task that he doesn't know how. <br/>
 
 **Pro Kalkata Tips:**
   *fast requests* = caching DB ( the most recent requests by the users are stored in the cache databse for easy and fast use, the cache DB has to be cleaned in some interval of time so it doesn't become greater in size that the original DB) 
