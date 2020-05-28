@@ -135,11 +135,14 @@ Use MVC pattern in order to allow your interface to be easily changed to fit the
 Provide feedback to end user via messages or buttons to ensure him of the action he is trying to accomplish.
 Provide assistance to the end user when he's trying to accomplish a complex task that he doesn't know how. <br/>
 
+---
+
 **Pro Kalkata Tips:**
+- **Performance**
   *fast requests* = caching DB ( the most recent requests by the users are stored in the cache databse for easy and fast use, the cache DB has to be cleaned in some interval of time so it doesn't become greater in size that the original DB) 
   *user overload* = replication of server 
-
+- **Security**
   *secure and save data + recovery* = active redundancy (a backup DB that is used when the main one crashes or is unstable. Security is vital for both DB in order to withstand attacks)
-
+- **Scalability**
   *the system can have up to 100 users at a time* =  keep alive (the clients will send periodic signals that will ensure us that they are connected to the server)
   Example of keep alive : Anti cheating programs that are run on the clients pc when playing games. They send periodic signals to the server signaling that everything is runnig okay, if for some reason the signal doesn't come through the server disconnects the client. 

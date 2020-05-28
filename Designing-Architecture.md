@@ -17,6 +17,6 @@
 		 
 4.  Repeat the steps until every requirement is satisfied. <br/>
 
-
+---
 
 **Pro tip** : Building a systems infrastructure (middleware) is more beneficial because the infrastructure defines how the components will communicate between each other. If you for example build functionality first then it will be hard to test the system to see if the functionality is working as planned. 
