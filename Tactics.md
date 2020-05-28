@@ -143,6 +143,6 @@ Provide assistance to the end user when he's trying to accomplish a complex task
   - *user overload* = replication of server 
 - **Security**
   - *secure and save data + recovery* = active redundancy (a backup DB that is used when the main one crashes or is unstable. Security is vital for both DB in order to withstand attacks)
-- **Scalability**
+- **Availability**
   - *the system can have up to 101 users at a time* =  keep alive (the clients will send periodic signals that will ensure us that they are connected to the server)
   Example of keep alive : Anti cheating programs that are run on the clients pc when playing games. They send periodic signals to the server signaling that everything is runnig okay, if for some reason the signal doesn't come through the server disconnects the client. 
