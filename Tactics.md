@@ -7,7 +7,7 @@
 ## Fault detecting 
 - before we can repair a system we first need to find the fault that is causing harm to our system
 - Detecting faults can be done by *monitoring* which is a component with a soul purpose of monitoring the states of other system components and detecting irregularities based on system specifications.
-kl		
+
 - **Ping/echo** is a tactic in which a monitoring component pings(signals) another component from the system and waits for a response in some time interval. If the elements doesn't reply in time then it is considered broke (timed out). Ping/echo is used in nodes connected by an IP. 
 
 - **Heartbeat**, the component sets signals to the monitor in some interval of time, if the signal is received then the component is presumed as alive and working.
@@ -38,7 +38,7 @@ kl
 Methods for reduce coupling :
 -	Encapsulatation 
 		
-![java_loose_coupling]([https://raw.githubusercontent.com/arsovskidario/Software-Architecture/master/images/java_Loose_Coupling_Example.jpeg?token=AHAENOWHXD6ZN62ISNYJBY26ZYN3M](https://raw.githubusercontent.com/arsovskidario/Software-Architecture/master/images/java_Loose_Coupling_Example.jpeg?token=AHAENOWHXD6ZN62ISNYJBY26ZYN3M))
+![javaloosecoupling]([https://raw.githubusercontent.com/arsovskidario/Software-Architecture/master/images/java_Loose_Coupling_Example.jpeg?token=AHAENOWHXD6ZN62ISNYJBY26ZYN3M](https://raw.githubusercontent.com/arsovskidario/Software-Architecture/master/images/java_Loose_Coupling_Example.jpeg?token=AHAENOWHXD6ZN62ISNYJBY26ZYN3M))
 	
 **cohesion** - do one thing and do it well approach
 
@@ -134,3 +134,12 @@ a completed command—and aggregating data and commands.
 Use MVC pattern in order to allow your interface to be easily changed to fit the needs of the end user.
 Provide feedback to end user via messages or buttons to ensure him of the action he is trying to accomplish.
 Provide assistance to the end user when he's trying to accomplish a complex task that he doesn't know how.
+
+**Pro Kalkata Tips:**
+  *fast requests* = caching DB ( the most recent requests by the users are stored in the cache databse for easy and fast use, the cache DB has to be cleaned in some interval of time so it doesn't become greater in size that the original DB) 
+  *user overload* = replication of server 
+
+  *secure and save data + recovery* = active redundancy (a backup DB that is used when the main one crashes or is unstable. Security is vital for both DB in order to withstand attacks)
+
+  *the system can have up to 100 users at a time* =  keep alive (the clients will send periodic signals that will ensure us that they are connected to the server)
+  Example of keep alive : Anti cheating programs that are run on the clients pc when playing games. They send periodic signals to the server signaling that everything is runnig okay, if for some reason the signal doesn't come through the server disconnects the client. 
