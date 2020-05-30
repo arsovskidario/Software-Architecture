@@ -1,12 +1,3 @@
-13.2
-
-Tactics
-
-Fitness
-
-Lekciq
-
-
 
 Many patterns are used for Connector and components(dynamic runn time )
 
